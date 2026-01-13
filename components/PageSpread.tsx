@@ -89,7 +89,7 @@ export default function PageSpread({ leftContent, rightContent, pageNumber, dire
           </div>
 
           {/* Page number */}
-          <div className="absolute bottom-4 left-0 right-0 text-center z-20">
+          <div className="hidden lg:block absolute bottom-4 left-0 right-0 text-center z-20">
             <span className="text-sm text-[#6b5d4f] font-serif">{pageNumber}</span>
           </div>
         </div>
@@ -144,7 +144,7 @@ export default function PageSpread({ leftContent, rightContent, pageNumber, dire
           </div>
 
           {/* Page number */}
-          <div className="absolute bottom-4 left-0 right-0 text-center z-20">
+          <div className="hidden lg:block absolute bottom-4 left-0 right-0 text-center z-20">
             <span className="text-sm text-[#6b5d4f] font-serif">{pageNumber + 1}</span>
           </div>
         </div>

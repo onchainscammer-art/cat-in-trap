@@ -460,6 +460,8 @@ export default function Storybook() {
               autoPlay
               loop
               playsInline
+              preload="auto"
+              muted
             >
               <source src="/finalbookmovie.mov" type="video/mp4" />
             </video>
