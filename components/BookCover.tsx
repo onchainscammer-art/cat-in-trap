@@ -17,7 +17,7 @@ export default function BookCover({ onOpen }: BookCoverProps) {
         className="relative w-full h-full flex items-center justify-center"
       >
         {/* Book Cover */}
-        <div className="relative w-[96vw] max-h-[96vh] aspect-square sm:w-[90vw] lg:w-[70vw] lg:max-h-[85vh] sm:max-w-2xl lg:max-w-4xl rounded-lg shadow-2xl border-8 border-[#2a2520]/30 overflow-hidden">
+        <div className="relative w-[96vw] max-h-[96vh] aspect-square sm:w-[90vw] lg:w-[45vw] lg:h-[88vh] lg:aspect-auto sm:max-w-2xl rounded-lg shadow-2xl border-8 border-[#2a2520]/30 overflow-hidden">
           {/* Book Cover Image */}
           <Image
             src="/bookcover.jpg"
