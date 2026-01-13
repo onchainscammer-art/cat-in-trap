@@ -282,24 +282,18 @@ export default function Storybook() {
     {
       type: 'spread' as const,
       left: (
-        <div className="h-full flex items-center justify-center relative">
+        <div className="h-full flex items-center justify-center lg:items-start lg:justify-start relative">
           <TornCorner corner="top-left" />
           <InkSplatter className="top-10 left-10" color="#2a2520" />
           <Fingerprint className="bottom-10 right-10" />
 
-          <HandDrawnFrame className="w-full aspect-square max-h-full transform -rotate-1">
-            <div className="w-full h-full bg-gradient-to-br from-[#1a1a1a] via-[#2a2520] to-[#3e342e] rounded-lg flex items-center justify-center p-6 relative overflow-hidden">
-              {/* Fish in bowl looking scared */}
-              <div className="absolute inset-0">
-                <div className="absolute top-1/3 left-1/2 -translate-x-1/2 w-32 h-32 rounded-full bg-blue-500/20 border-4 border-blue-400/40"></div>
-                <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-12 h-8 bg-orange-500/60 rounded-full"></div>
-              </div>
-              <p
-                className="text-[#f5f1e8] text-center text-sm sm:text-base relative z-10"
-                style={{ fontFamily: 'var(--font-hand)' }}
-              >
-                [The Fish in the bowl, shaking with fear]
-              </p>
+          <HandDrawnFrame className="w-[75%] max-h-[65vh] lg:-mt-4 transform -rotate-1">
+            <div className="w-full h-full rounded-lg relative overflow-hidden flex items-center justify-center">
+              <img
+                src="/bookimage4.jpg"
+                alt="The Fish in the bowl, shaking with fear"
+                className="max-w-full max-h-full object-contain"
+              />
             </div>
           </HandDrawnFrame>
         </div>
@@ -359,25 +353,18 @@ export default function Storybook() {
     {
       type: 'spread' as const,
       left: (
-        <div className="h-full flex items-center justify-center relative">
+        <div className="h-full flex items-center justify-center lg:items-start lg:justify-start relative">
           <CoffeeStain className="top-20 right-20" />
           <InkSplatter className="bottom-10 left-10" color="#ff3b30" />
           <StarDoodle className="top-1/4 left-10" />
 
-          <HandDrawnFrame className="w-full aspect-square max-h-full transform rotate-2">
-            <div className="w-full h-full bg-gradient-to-br from-[#2a2520] via-[#4e342e] to-[#1a1a1a] rounded-lg flex items-center justify-center p-6 relative overflow-hidden border-4 border-[#ff3b30]/30">
-              {/* Thing One and Thing Two silhouettes */}
-              <div className="absolute inset-0">
-                <div className="absolute top-1/3 left-1/4 w-16 h-32 bg-red-500/40 rounded-full"></div>
-                <div className="absolute top-1/3 right-1/4 w-16 h-32 bg-red-500/40 rounded-full"></div>
-                <div className="absolute bottom-1/3 left-0 right-0 h-1 bg-white/20"></div>
-              </div>
-              <p
-                className="text-[#f5f1e8] text-center text-sm sm:text-base relative z-10 font-bold"
-                style={{ fontFamily: 'var(--font-hand)' }}
-              >
-                [Thing One and Thing Two standing ready,<br />loyal and fast]
-              </p>
+          <HandDrawnFrame className="w-[75%] max-h-[65vh] lg:-mt-4 transform rotate-2">
+            <div className="w-full h-full rounded-lg relative overflow-hidden flex items-center justify-center">
+              <img
+                src="/bookimage5.jpg"
+                alt="Thing One and Thing Two standing ready"
+                className="max-w-full max-h-full object-contain"
+              />
             </div>
           </HandDrawnFrame>
         </div>
