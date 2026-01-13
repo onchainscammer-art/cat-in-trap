@@ -144,18 +144,12 @@ export default function Storybook() {
           <StarDoodle className="top-1/3 left-10" />
 
           <HandDrawnFrame className="w-full aspect-square max-h-full transform -rotate-2">
-            <div className="w-full h-full bg-gradient-to-br from-[#2a2520] via-[#3e342e] to-[#1a1a1a] rounded-lg flex items-center justify-center p-6 relative overflow-hidden">
-              {/* Door with cat silhouette */}
-              <div className="absolute inset-0">
-                <div className="absolute top-0 left-1/3 w-1/3 h-full bg-gradient-to-b from-yellow-600/20 to-transparent"></div>
-                <div className="absolute bottom-1/4 right-1/4 w-32 h-40 bg-black/60 rounded-full transform skew-y-12"></div>
-              </div>
-              <p
-                className="text-[#f5f1e8] text-center text-sm sm:text-base relative z-10"
-                style={{ fontFamily: 'var(--font-hand)' }}
-              >
-                [The Cat entering through the door<br />with a large sack, looking menacing]
-              </p>
+            <div className="w-full h-full rounded-lg relative overflow-hidden">
+              <img
+                src="/bookimage2.jpg"
+                alt="The Cat entering with the sack"
+                className="w-full h-full object-cover"
+              />
             </div>
           </HandDrawnFrame>
         </div>
@@ -221,18 +215,12 @@ export default function Storybook() {
           <StarDoodle className="bottom-1/4 left-10" />
 
           <HandDrawnFrame className="w-full aspect-square max-h-full transform rotate-2">
-            <div className="w-full h-full bg-gradient-to-br from-[#ff6b35]/20 via-[#f7931e]/10 to-[#ff3b30]/20 rounded-lg flex items-center justify-center p-6 relative overflow-hidden border-4 border-[#ff3b30]/30">
-              {/* Pyrex and cooking equipment */}
-              <div className="absolute inset-0">
-                <div className="absolute top-1/4 left-1/4 w-20 h-20 rounded-full bg-gradient-to-br from-white/40 to-gray-300/40 border-4 border-white/60"></div>
-                <div className="absolute bottom-1/3 right-1/4 w-16 h-24 bg-gradient-to-b from-orange-400/30 to-red-500/30"></div>
-              </div>
-              <p
-                className="text-[#2a2520] text-center text-sm sm:text-base relative z-10 font-bold"
-                style={{ fontFamily: 'var(--font-hand)' }}
-              >
-                [The Cat with Pyrex and cooking equipment,<br />showing how it's done]
-              </p>
+            <div className="w-full h-full rounded-lg relative overflow-hidden">
+              <img
+                src="/bookimage3.jpg"
+                alt="The Cat with Pyrex and cooking equipment"
+                className="w-full h-full object-cover"
+              />
             </div>
           </HandDrawnFrame>
         </div>
@@ -290,7 +278,164 @@ export default function Storybook() {
       )
     },
 
-    // Page 9-10: Back Matter
+    // Page 9-10: Stanza 4
+    {
+      type: 'spread' as const,
+      left: (
+        <div className="h-full flex items-center justify-center relative">
+          <TornCorner corner="top-left" />
+          <InkSplatter className="top-10 left-10" color="#2a2520" />
+          <Fingerprint className="bottom-10 right-10" />
+
+          <HandDrawnFrame className="w-full aspect-square max-h-full transform -rotate-1">
+            <div className="w-full h-full bg-gradient-to-br from-[#1a1a1a] via-[#2a2520] to-[#3e342e] rounded-lg flex items-center justify-center p-6 relative overflow-hidden">
+              {/* Fish in bowl looking scared */}
+              <div className="absolute inset-0">
+                <div className="absolute top-1/3 left-1/2 -translate-x-1/2 w-32 h-32 rounded-full bg-blue-500/20 border-4 border-blue-400/40"></div>
+                <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-12 h-8 bg-orange-500/60 rounded-full"></div>
+              </div>
+              <p
+                className="text-[#f5f1e8] text-center text-sm sm:text-base relative z-10"
+                style={{ fontFamily: 'var(--font-hand)' }}
+              >
+                [The Fish in the bowl, shaking with fear]
+              </p>
+            </div>
+          </HandDrawnFrame>
+        </div>
+      ),
+      right: (
+        <div className="h-full flex flex-col justify-center relative space-y-1.5 sm:space-y-2">
+          <CoffeeStain className="top-10 right-10" />
+          <ArrowDoodle className="top-1/3 left-5" direction="right" />
+
+          <WobblyLine tilt={0.2}>But the Fish in the bowl,</WobblyLine>
+          <WobblyLine tilt={-0.1}>
+            <span className="ml-4 sm:ml-8">he was <Emphasis type="big">shaking</Emphasis> with fear,</span>
+          </WobblyLine>
+
+          <div className="h-1.5"></div>
+
+          <WobblyLine tilt={-0.3}>He said, '<Emphasis type="shout">Twelve</Emphasis> is outside!</WobblyLine>
+          <WobblyLine tilt={0.4}>
+            <span className="ml-4 sm:ml-8">Get that <Highlight color="red">shit</Highlight> out of here!</span>
+          </WobblyLine>
+
+          <div className="h-1.5"></div>
+
+          <WobblyLine tilt={0.1}>You should not be whippin'</WobblyLine>
+          <WobblyLine tilt={-0.2}>
+            <span className="ml-4 sm:ml-8">when neighbors are <Emphasis type="big">home</Emphasis>!</span>
+          </WobblyLine>
+
+          <div className="h-1.5"></div>
+
+          <WobblyLine tilt={0.3}>You should not be answering</WobblyLine>
+          <WobblyLine tilt={-0.1}>
+            <span className="ml-4 sm:ml-8">every damn <Highlight>phone</Highlight>!</span>
+          </WobblyLine>
+
+          <div className="h-1.5"></div>
+
+          <WobblyLine tilt={-0.2}>He leads to a raid!</WobblyLine>
+          <WobblyLine tilt={0.2}>
+            <span className="ml-4 sm:ml-8">He leads to a <Emphasis type="scary">case</Emphasis>!</span>
+          </WobblyLine>
+
+          <div className="h-1.5"></div>
+
+          <WobblyLine tilt={0.4}>Get that Cat in the Trap</WobblyLine>
+          <WobblyLine tilt={-0.3}>
+            <span className="ml-4 sm:ml-8">out of this <Emphasis type="impact">place!'</Emphasis></span>
+          </WobblyLine>
+
+          <StarDoodle className="bottom-10 left-10" />
+          <CircleDoodle className="bottom-5 right-20" />
+        </div>
+      )
+    },
+
+    // Page 11-12: Stanza 5
+    {
+      type: 'spread' as const,
+      left: (
+        <div className="h-full flex items-center justify-center relative">
+          <CoffeeStain className="top-20 right-20" />
+          <InkSplatter className="bottom-10 left-10" color="#ff3b30" />
+          <StarDoodle className="top-1/4 left-10" />
+
+          <HandDrawnFrame className="w-full aspect-square max-h-full transform rotate-2">
+            <div className="w-full h-full bg-gradient-to-br from-[#2a2520] via-[#4e342e] to-[#1a1a1a] rounded-lg flex items-center justify-center p-6 relative overflow-hidden border-4 border-[#ff3b30]/30">
+              {/* Thing One and Thing Two silhouettes */}
+              <div className="absolute inset-0">
+                <div className="absolute top-1/3 left-1/4 w-16 h-32 bg-red-500/40 rounded-full"></div>
+                <div className="absolute top-1/3 right-1/4 w-16 h-32 bg-red-500/40 rounded-full"></div>
+                <div className="absolute bottom-1/3 left-0 right-0 h-1 bg-white/20"></div>
+              </div>
+              <p
+                className="text-[#f5f1e8] text-center text-sm sm:text-base relative z-10 font-bold"
+                style={{ fontFamily: 'var(--font-hand)' }}
+              >
+                [Thing One and Thing Two standing ready,<br />loyal and fast]
+              </p>
+            </div>
+          </HandDrawnFrame>
+        </div>
+      ),
+      right: (
+        <div className="h-full flex flex-col justify-center relative space-y-1.5 sm:space-y-2">
+          <Fingerprint className="top-10 right-10" />
+          <ArrowDoodle className="top-1/2 left-5" direction="down" />
+
+          <WobblyLine tilt={-0.2}>'Have no fear!' said the Cat.</WobblyLine>
+          <WobblyLine tilt={0.3}>
+            <span className="ml-4 sm:ml-8">'I won't catch a <Emphasis type="big">charge</Emphasis>.</span>
+          </WobblyLine>
+
+          <div className="h-1.5"></div>
+
+          <WobblyLine tilt={0.1}>My lawyers are <Highlight>paid</Highlight></WobblyLine>
+          <WobblyLine tilt={-0.4}>
+            <span className="ml-4 sm:ml-8">and my shooters are <Emphasis type="shout">large</Emphasis>.</span>
+          </WobblyLine>
+
+          <div className="h-1.5"></div>
+
+          <WobblyLine tilt={0.2}>I will bring in two runners</WobblyLine>
+          <WobblyLine tilt={-0.1}>
+            <span className="ml-4 sm:ml-8">to help with the <Emphasis type="big">weight</Emphasis>.</span>
+          </WobblyLine>
+
+          <div className="h-1.5"></div>
+
+          <WobblyLine tilt={0.4}>They are fast on their feet</WobblyLine>
+          <WobblyLine tilt={-0.3}>
+            <span className="ml-4 sm:ml-8">and they never come <Highlight color="yellow">late</Highlight>.</span>
+          </WobblyLine>
+
+          <div className="h-1.5"></div>
+
+          <WobblyLine tilt={-0.1}>
+            <Emphasis type="impact">Thing One and Thing Two!</Emphasis>
+          </WobblyLine>
+          <WobblyLine tilt={0.2}>
+            <span className="ml-2">They are <Emphasis type="scary">loyal</Emphasis> and true!</span>
+          </WobblyLine>
+
+          <div className="h-1.5"></div>
+
+          <WobblyLine tilt={0.3}>They will serve all the fiends</WobblyLine>
+          <WobblyLine tilt={-0.2}>
+            <span className="ml-4 sm:ml-8">while I count up with <Highlight color="red">you!'</Highlight></span>
+          </WobblyLine>
+
+          <InkSplatter className="bottom-5 right-10" />
+          <CircleDoodle className="bottom-10 left-20" />
+        </div>
+      )
+    },
+
+    // Page 13-14: Back Matter
     {
       type: 'spread' as const,
       left: (
