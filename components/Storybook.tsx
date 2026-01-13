@@ -69,11 +69,11 @@ export default function Storybook() {
     {
       type: 'spread' as const,
       left: (
-        <div className="h-full flex items-center justify-center relative py-4">
+        <div className="h-full flex items-center justify-center relative -m-6 sm:-m-8 lg:-m-12 p-4">
           <InkSplatter className="top-10 right-10" color="#2a2520" />
           <Fingerprint className="bottom-20 left-10" />
 
-          <HandDrawnFrame className="w-full h-[85%] transform rotate-1">
+          <HandDrawnFrame className="w-full h-[95%] max-w-full transform rotate-1">
             <div className="w-full h-full rounded-lg relative overflow-hidden">
               <img
                 src="/bookimage1.jpg"
@@ -138,12 +138,12 @@ export default function Storybook() {
     {
       type: 'spread' as const,
       left: (
-        <div className="h-full flex items-center justify-center relative py-4">
+        <div className="h-full flex items-center justify-center relative -m-6 sm:-m-8 lg:-m-12 p-4">
           <TornCorner corner="top-right" />
           <InkSplatter className="bottom-10 left-10" color="#ff3b30" />
           <StarDoodle className="top-1/3 left-10" />
 
-          <HandDrawnFrame className="w-full h-[85%] transform -rotate-2">
+          <HandDrawnFrame className="w-full h-[95%] max-w-full transform -rotate-2">
             <div className="w-full h-full rounded-lg relative overflow-hidden">
               <img
                 src="/bookimage2.jpg"
@@ -209,12 +209,12 @@ export default function Storybook() {
     {
       type: 'spread' as const,
       left: (
-        <div className="h-full flex items-center justify-center relative py-4">
+        <div className="h-full flex items-center justify-center relative -m-6 sm:-m-8 lg:-m-12 p-4">
           <CoffeeStain className="bottom-10 right-10" />
           <InkSplatter className="top-20 left-20" color="#ff3b30" />
           <StarDoodle className="bottom-1/4 left-10" />
 
-          <HandDrawnFrame className="w-full h-[85%] transform rotate-2">
+          <HandDrawnFrame className="w-full h-[95%] max-w-full transform rotate-2">
             <div className="w-full h-full rounded-lg relative overflow-hidden">
               <img
                 src="/bookimage3.jpg"
